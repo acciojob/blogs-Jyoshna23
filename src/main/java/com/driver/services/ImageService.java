@@ -44,7 +44,7 @@ public class ImageService {
 
         String[] screenDimenArray = screenDimensions.split("X");
 
-        Image image = new Image();
+        Image image = imageRepository2.findById(id).get();
         String dimensions = image.getDimensions();
         String[] imgDimenArray = dimensions.split("X");
 
