@@ -26,7 +26,6 @@ public class BlogService {
 
         Blog blog = new Blog();
 
-//        blog.setId(userId);
         blog.setTitle(title);
         blog.setContent(content);
 

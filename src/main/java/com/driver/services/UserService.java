@@ -30,15 +30,15 @@ public class UserService {
     }
 
     public User updateUser(Integer id, String password){
-        User user = new User();
+        User user1;
 
-        User user1 = userRepository3.findById(id).get();
+         user1 = userRepository3.findById(id).get();
 
         user1.setPassword(password);
 
-        userRepository3.save(user);
+        userRepository3.save(user1);
 
 
-        return user;
+        return user1;
     }
 }
